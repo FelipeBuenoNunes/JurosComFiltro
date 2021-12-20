@@ -1,0 +1,127 @@
+form:first-of-type{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+}
+form:first-of-type > div,
+form:last-of-type{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 0.8vw;
+}
+
+form:first-of-type > input{
+    background-color: rgb(211, 211, 211);
+    width: 15%;
+    height: 5.5vh;
+    border-radius: 0.4vw;
+    color: rgb(56, 56, 56);
+}
+
+input::placeholder{
+    color: rgb(56, 56, 56);
+}
+
+form:first-of-type > input[type='date']{
+    box-sizing: content-box;
+    background-color: rgb(106, 106, 255);
+    width: 13%;
+    height: 2.5vh;
+    color: white;
+    padding: 1%;
+}
+
+::-webkit-calendar-picker-indicator{
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.2vw;
+    margin-right: 0.2vw;
+    cursor: pointer;
+}
+
+table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: max-content;
+    align-self: center;
+    border: 1px solid black;
+    margin-top: 3vh;
+}
+
+th{
+    color: rgb(143, 11, 11);
+}
+
+td,
+th{
+    border: 1px solid black;
+    text-align: center;
+}
+
+form:last-of-type{
+    margin-top: 5vh;
+}
+
+#filter{
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    margin-bottom: 5%;
+}
+
+#filter > div > div{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    align-items: center;
+}
+
+#filter > div > div > input[type='date']{
+    border-radius: 0.4vw;
+    box-sizing: content-box;
+    background-color: rgb(106, 106, 255);
+    width: 14vw;
+    height: 6vh;
+    color: white;
+    padding: 1%;
+}
+
+#filter > div > input{
+    background-color: rgb(211, 211, 211);
+    width: 15%;
+    height: 5.5vh;
+    border-radius: 0.4vw;
+    color: rgb(56, 56, 56);
+}
+
+#filter > input{
+    color: white;
+}
+
+input[type='checkbox']{
+    visibility: hidden;
+}
+
+input:checked + label{
+    color: red;
+}
+
+input:checked ~ #filter{
+    visibility: visible;
+}
+
+label{
+    background-color: rgb(31, 31, 31);
+    color: rgb(112, 112, 112);
+    padding: .5vw;
+    border-radius: 0.4vw;
+    width: max-content;
+    align-self: center;
+}
+
+input:checked + label{
+    background-color: rgb(112, 112, 112);
+    color: black;
+}

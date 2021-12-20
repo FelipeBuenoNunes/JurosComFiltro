@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="set-style.css">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<body>
+    <header>
+        <h1>Juros da Joana</h1>
+        <nav>
+            <p>Home</p>
+            <p>Sobre</p>
+            <p>Cadastrar</p>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <input type="text" placeholder="Nome do cliente"/>
+            <input type="date" />
+            <input type="number" placeholder="Valor da compra" />
+            <div>
+                <input type="button" value="Cadastrar" onclick="printCadaster()"/>
+                <input type="button" value="Atualizar juros" onclick="calc()"/>
+            </div>
+        </form>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Nome do cliente</th>
+                    <th>Data do vencimento</th>
+                    <th>Valor da compra</th>
+                    <th>Dias em atraso</th>
+                    <th>Juros</th>
+                    <th>Total</th>
+                </tr>
+                </tbody>
+        </table>
+        <form>
+            <input type="button" value="Contas por cliente" onclick="listClient()"/>
+            <input type="button" value="Ordenar por data" onclick="listForDate()" />
+        </form>
+
+    </main>
+    <input type="checkbox" id="teste" />
+    <label for="teste">Filtro</label>
+    <form id="filter" >
+        <div>
+            <div>
+                <span>Data de início</span>
+                <input type="date" id="dateStart" class="filterClass" />
+            </div>
+            <div>
+                <span>Data de fim</span>
+                <input type="date" id="dateLast" class="filterClass" />
+            </div>
+        </div>
+        <div>
+            <input type="number" placeholder="Valor mínimo" id="valueMin" class="filterClass" />
+            <input type="number" placeholder="Valor máximo" id="valueMax" class="filterClass"/>
+        </div>       
+        <input type="button" value="Filtrar" onclick="filter()" />
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

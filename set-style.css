@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=McLaren&display=swap');
+
+
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: mclaren, cursive;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Anton', sans-serif;
+    padding: 2.5% 2.5% 0;
+}
+nav{
+    padding-right: 5%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type='button']{
+    background: linear-gradient(to right, rgb(80, 80, 80), rgb(100, 100, 100));
+    box-shadow: 0.1px 0.1px 5px rgb(143, 143, 143);
+    color: white;
+    width: 12%;
+    height: 5vh;
+    border-radius: 0.5vw;
+    cursor: pointer;
+}
